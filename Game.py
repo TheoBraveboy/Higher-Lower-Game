@@ -30,6 +30,8 @@ def vs_game():
     
     A = random_celeb()
     B = random_celeb()
+    if A == B:
+      B=random_celeb()
     print(f"Your Current points are: {points}")
     print(f"Compare A: {data[A]['name']} ,{data[A]['description']} from {data[A]['country']} ")
     print(art.vs)
